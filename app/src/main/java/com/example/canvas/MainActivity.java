@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         // setup background color
-       canvas.drawColor(Color.RED);
+       canvas.drawColor(Color.BLACK);
 
 
        // paintbrush color
@@ -48,6 +48,25 @@ public class MainActivity extends AppCompatActivity {
         paintbrush.setColor(Color.GREEN);
         canvas.drawLine(10,50,200,250, paintbrush);
 
+
+
+
+        // draw SOME SQUARES
+        paintbrush.setColor(Color.WHITE);
+        canvas.drawRect(100,100,110,110,paintbrush);
+        canvas.drawRect(150,150,210,210,paintbrush);
+
+        // draw some text
+
+        //size of text
+        paintbrush.setTextSize(40);
+
+        //draw text on screen
+        canvas.drawText("hello Diljit", 10 , 40,paintbrush);
+
+
+
+        canvas.drawText("bye Diljit", 10 , 400,paintbrush);
 
         // put the canvas into frame
         imageview.setImageBitmap(b);
